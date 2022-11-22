@@ -7,7 +7,6 @@
 }
 .conIntern1 {
   display: flex;
-  justify-content: space-between;
   background-color: #1f234f;
   padding: 10px;
   margin: 5px;
@@ -101,14 +100,62 @@
   margin: 5px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1180px) {
   .container2 {
     flex-direction: column;
   }
+  .container2{
+    background-color: #dda026;
+  }
+  .intern1 {
+    width: 150px;
+  }
+  .intern2{
+    width: 334px;
+  }
+  .internBlue{
+    width: 337px;
+  }
+  .internCyan{
+    width: 1500px;
+  }
+  .conIntern4{
+    flex-direction: initial;
+    flex-wrap: wrap;
+  }
+  .conIntern4 div{
+    width: 1500px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
+  .conIntern1 {
+    flex-wrap: wrap;
+  }
+  .container2{
+    background-color: #dda026;
+  }
+  .intern1 {
+    width: 350px;
+  }
   .container2 {
     flex-direction: column;
+  }
+  .internCyan {
+    width: 800px;
+  }
+
+  .conIntern4 {
+    flex-direction: initial;
+    flex-wrap: wrap;
+    background-color: orange
+  }
+  .conIntern4 div{
+    width: 800px;
+    background-color: yellow;
+  }
+  .internBlue {
+    width: 800px;
+    background-color: cyan;
   }
 }
